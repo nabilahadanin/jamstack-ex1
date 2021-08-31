@@ -1,9 +1,13 @@
 ---
-tittle : About this page
-layout : base.njk 
+title: About this page
+layout: base.njk 
 ---
     
 <div class="container">
     <h1>This page is an example for myself, so i can try.</h1>
     <p>It was made using HTML, CSS and JavaScript and served as JAMstack site.</p>
 </div>
+
+{% for item in news %}
+    <a href="/{{ item.country }}">{{ item.country }}</a>
+{% endfor %}

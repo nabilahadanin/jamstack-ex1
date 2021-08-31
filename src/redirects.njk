@@ -1,0 +1,11 @@
+---
+permalink: _redirects
+---
+
+/   /ar/index.html  200 Language=ar
+
+{% for item in news %}
+/   /{{item.country}}/index.html    200 Country={{item.country}}
+{% endfor %}
+
+/   /gb/index.html  404 
